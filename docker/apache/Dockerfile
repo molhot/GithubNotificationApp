@@ -38,7 +38,3 @@ ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["apache2-foreground"]
 
 COPY ./BiteMention /var/www/html
-
-RUN chown www-data storage/ -R \
-&& composer install\
-&& npm install
