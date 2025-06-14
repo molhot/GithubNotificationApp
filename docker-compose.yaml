@@ -11,7 +11,7 @@ services:
     environment:
       COMPOSER_ALLOW_SUPERUSER: 1
     volumes:
-      - ./BiteMention:/var/www/html
+      - ./${APP_NAME}:/var/www/html
       - ./docker/apache/php.ini:/usr/local/etc/php/php.ini
     depends_on:
       - db
