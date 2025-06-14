@@ -35,6 +35,7 @@ COPY ./docker/app/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
-CMD ["apache2-foreground"]
 
 COPY ./BiteMention /var/www/html
+
+CMD ["apache2-foreground"]
