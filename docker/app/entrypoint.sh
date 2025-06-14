@@ -16,8 +16,7 @@ if [ -f artisan ]; then
   cd /var/www/html
   laravel_setup
 else
-  composer create-project laravel/laravel html
-  cd html
+  composer create-project laravel/laravel ./
   composer install --no-interaction
   cp .env.example .env
   php artisan key:generate
