@@ -10,3 +10,5 @@ APP_NAME=BiteMention
 の箇所のBiteMentionを作成したいアプリ名に変更してください  
   
 docker compose up -d --build  
+
+## 開発前のアプリの自動立ち上げよう
